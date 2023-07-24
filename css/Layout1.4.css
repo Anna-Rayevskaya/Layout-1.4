@@ -1,0 +1,150 @@
+html {
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/*@font-face {
+    font-family: 'TTLakes';
+    src: url('../fonts/TTLakes-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'TTLakes-bold';
+    src: url('../fonts/TTLakes-Bold.ttf');
+}*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    width: 320px;
+    padding-top: 20px;
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+    
+}
+                                                       /*Шапка*/
+
+.header-container{
+    
+    display: flex;
+    justify-content: flex-start;
+    min-height: 100px;
+    padding: 0 25px;
+}
+
+.header__logo{
+    margin-top: -5px;
+    margin-left: 15px; 
+}
+
+.button-menu{
+    padding: 0;
+    width: 40px;
+    height: 40px;   
+    background-color: #FFFFFF;
+    border: 0;
+} 
+
+
+.button-menu__checkstatus{
+    margin-left:auto;
+}
+
+                                                     /*Меню*/
+
+.nav{
+    width: 222px;
+}
+
+
+.nav__button{
+    display: block;
+    font-size: 16px;
+    letter-spacing: -0.2;
+    line-height: 24px;
+    width: 222px;
+    height: 70px;
+    text-align: left;
+    padding-left: 25px;
+    padding-right: 0;
+    border: 0;
+    background-color:  #FFFFFF;
+    font-family: 'TT Lakes';
+    font-weight: 600;
+    color: #1B1C21;
+    white-space: nowrap;
+}
+
+.nav__button:hover,
+.button-menu:hover,
+.button-language:hover{
+    opacity: 0.5 ;
+    transition: opacity 0.4s ease;
+}
+
+.nav__button--selected{
+    width: 216px;
+    padding-left: 21px;
+    color:#7E7E82;
+   
+}
+.nav__button--selected::before{
+    content: url(../img/highlight_h1.svg);
+    height: 32px;
+    width: 4px;
+    position: relative;
+    left: -21px;
+    top: 15px;
+    
+
+
+
+}
+                                                     /*Контакты*/
+
+.footer-container{
+    font-family: 'TT Lakes';
+    font-weight: 600;
+    color: #1B1C21;
+    padding-left: 25px ;
+    padding-bottom: 20px;
+    
+}
+
+
+.footer__button-menu{
+    margin-right: 10px;
+    margin-top: 140px;
+}
+
+.number{
+    font-family: 'TT Lakes';
+    font-weight: 800;
+    color: #1B1C21;
+    font-size: 24px;
+}
+
+.footer__button-language{
+    padding-top: 30px;
+}
+
+.button-language{
+    font-family: 'TT Lakes';
+    font-weight: 600;
+    border:0;
+    background-color:  #FFFFFF;
+}
+
+.button-language--selected{
+    color: #7E7E82;
+}
+
+.mail{
+    display: block;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #1B1C21;
+    text-decoration: none;
+}
